@@ -1,0 +1,29 @@
+.Studies {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+    &>h1,
+    &>p {
+        width: 100%;
+        text-align: center;
+    }
+
+    &>h1 {
+        color: #19293A;
+        font-family: "Title";
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    &>p {
+        color: #506473;
+        font-size: 21px;
+        max-width: 750px;
+        margin-bottom: 50px;
+    }
+}

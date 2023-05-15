@@ -1,0 +1,7 @@
+{
+  "name": "5874-technical-challenge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

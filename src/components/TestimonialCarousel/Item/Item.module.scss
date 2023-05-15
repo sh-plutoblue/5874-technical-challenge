@@ -1,0 +1,107 @@
+.Item {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc((1300px - 500px) / 2);
+    background-color: #E2E4E6;
+    border-radius: 5px;
+    color: #506473;
+    transition: .25s;
+
+    @media only screen and (min-width: 650px) {
+        transform: scale(.8);
+    }
+
+    @media only screen and (max-width: 1200px) {
+        max-width: 400px;
+    }
+
+    @media only screen and (max-width:1000px) {
+        width: 100%;
+        max-width: unset;
+        transform: scale(1);
+        margin-bottom: 15px;
+    }
+
+    &.Active {
+        opacity: 1;
+        z-index: 10;
+        max-width: 500px;
+
+        @media only screen and (min-width: 1000px) {
+            background-color: #19293A;
+            color: white;
+            transform: scale(1);
+        }
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 400px;
+        }
+
+        @media only screen and (max-width:1000px) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+
+    &Customer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        b,
+        span {
+            text-align: center;
+            width: 100%;
+        }
+
+        img {
+            margin: 0px 0px 15px;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        span {
+            margin-bottom: 25px;
+        }
+    }
+
+    &Info {
+        width: 100%;
+        padding: 25px;
+        max-width: 400px;
+
+        p {
+            width: 100%;
+            font-size: 26px;
+            padding: 50px 25px;
+            text-align: center;
+
+            i {
+                font-weight: 600;
+            }
+
+            span {
+                position: absolute;
+                font-size: 65px;
+                opacity: .25;
+
+                &:first-of-type {
+                    top: 0;
+                    left: 0;
+                }
+
+                &:last-of-type {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.Testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 25px;
+    background-color: white;
+
+    h1 {
+        font-size: 48px;
+        color: #19293A;
+        width: 100%;
+        line-height: 1;
+        font-family: 'Title';
+        padding: 0px 0px 50px 0px;
+        max-width: 1200px;
+
+        span {
+            width: 100%;
+            float: left;
+            color: #506473;
+        }
+    }
+
+    &Content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        &Inner {
+            width: 100%;
+            max-width: 1300px;
+        }
+    }
+}

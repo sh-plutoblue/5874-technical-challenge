@@ -1,0 +1,61 @@
+.Carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &Controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 50px;
+
+        @media only screen and (max-width:1000px) {
+            display: none;
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            margin: 0px 10px;
+            transition: .25s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            background-color: transparent;
+
+            &::after {
+                content: '';
+                background-color: #C5C9CD;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                transition: .25s;
+                border: 2px solid transparent;
+                box-sizing: border-box;
+                box-shadow: inset 0px 0px 0px 0px white;
+            }
+
+            &:hover {
+                &::after {
+                    background-color: #19293A;
+                    box-shadow: inset 0px 0px 0px 2px white;
+                }
+            }
+
+            &.Active {
+                &::after {
+                    background-color: #19293A;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
